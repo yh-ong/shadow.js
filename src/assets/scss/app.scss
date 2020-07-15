@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300,700');
+
+body {
+    background-color: #F5F6F7;
+    font-family: lato;
+}
+
+#app {
+    width: 850px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: all 1600ms ease-in-out;
+    border-radius: 10px;
+    padding: 1.6rem;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
+        -7px -7px 20px rgba(255, 255, 255, 1),
+        inset 0px 0px 4px rgba(255, 255, 255, 0.2),
+        inset 7px 7px 15px rgba(55, 84, 170, 0),
+        inset -7px -7px 20px rgba(255, 255, 255, 0),
+        0px 0px 4px rgba(255, 255, 255, 0);
+    transition: all 0.5s;
+}
+
+#box-shadow {
+    display: grid;
+    margin-bottom: 1.2rem;
+}
+
+form-field {
+    grid-column: 1;
+}
+
+#result {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .box {
+        width: 350px;
+        height: 250px;
+        border: 1px solid #000000;
+    }
+}
+
+.form {
+    label {
+        display: block;
+        font-weight: 500;
+        max-width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    input {
+        display: inline-block;
+        border: 1px solid #dedede;
+        border-radius: 4px;
+        outline: none;
+        background: transparent;
+        margin-bottom: 0.25rem;
+        padding: 0.75rem;
+        line-height: 1;
+        width: 77.5%;
+        font-size: 1rem;
+        vertical-align: middle;
+    }
+    
+    .range-field {
+        max-width: 60%;
+    }
+
+    .input-field {
+        max-width: 10%;
+    }
+
+    .color-field {
+        max-width: 77.5%;
+    }
+}
+
+.btn {
+    display: inline-block;
+    color: #212529;
+    font-weight: 400;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.clipboard {
+    position: relative;
+    float: right;
+    border-radius: 5px;
+
+    .btn-clipboard {
+        position: absolute;
+        top: .5rem;
+        right: .5rem;
+        z-index: 10;
+        display: block;
+        padding: .25rem .5rem;
+        font-size: 75%;
+        color: #818a91;
+        background-color: transparent;
+        border: 0;
+        border-radius: .25rem;
+        cursor: pointer;
+    }
+}
+
+pre.highlight {
+    background: #f0f0f0;
+    padding: 1.2rem 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+    font-size: 1.2rem;
+    color: #212529;
+    tab-size: 2;
+    text-align: left;
+
+    code {
+        line-height: 1.2;
+        cursor: text;
+    }
+}
